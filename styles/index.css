@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+:root {
+    --cor0: #297018;
+    --cor1: #447039;
+    --cor2: #93F27C;
+    --cor3: #58F033;
+    --cor4: #45BD28;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/**Boot CSS**/
+
+html, body {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.center {
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.w33 {
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.w50 {
+    padding: 0 10px;
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+/**Estilização do site**/
+
+header {
+    padding: 26px 0;
+    background-color: var(--cor0);
+}
+
+header .logo {
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.desktop ul {
+    position: relative;
+    top: 6px;
+    list-style-type: none;
+}
+
+nav.desktop li {
+    font-weight: 300;
+    font-size: 15px;
+    padding: 0 28px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav.desktop a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.desktop a:hover {
+    text-decoration: underline;
+}
+
+.mobile {
+    display: none;
+}
+
+footer {
+    background-color: var(--cor0);
+    padding: 30px 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*Para arrumar o scroll do Internet Explorer e Edge*/
+
+body {
+    overflow-x: hidden;
+}

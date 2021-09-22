@@ -181,10 +181,6 @@ footer a {
         padding: 20px;
         width: 100%;
     }
-    .box-especialidade {
-        padding: 40px 20px;
-        margin: 0;
-    }
 }
 
 @media screen and (max-width: 595px) {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Neucha&display=swap');
 :root {
     --cor0: #297018;
     --cor1: #447039;
@@ -28,7 +28,7 @@ body {
 
 img {
     width: 100%;
-    max-width: 400px;
+    max-width: 150px;
 }
 
 .center {
@@ -109,38 +109,61 @@ main {
     flex: 1 0 auto;
 }
 
-section.descricao-planta {
-    border-radius: 0 0 20px 20px;
-    font-family: 'Open Sans';
+section.hub {
     background-color: white;
-    margin: auto;
-    margin-bottom: 40px;
+    padding: 20px;
 }
 
-section.descricao-planta h1 {
+section.hub a {
+    color: black;
+    text-decoration: none;
+}
+
+section.hub h1 {
     text-align: center;
-    text-transform: uppercase;
-    padding: 30px 0 10px 0;
+    font-family: 'Neucha';
+    font-size: 3em;
+    margin: 10px 0;
 }
 
-section.descricao-planta img {
+div.bloco-planta {
+    margin-bottom: 20px;
+    display: inline-flex;
+    border-radius: 10px;
+    background-color: rgb(181, 226, 181);
+    padding: 20px;
+}
+
+div.bloco-planta:end {
+    margin-bottom: 0;
+}
+
+div.bloco-planta img {
+    margin: 10px;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.767);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
 }
 
-p {
+div.bloco-planta h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+div.bloco-planta p {
     text-align: justify;
-    margin: 15px 10px;
+    margin: auto;
 }
 
-p.writer {
-    text-align: end;
+div.bloco-planta:hover {
+    color: black;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px var(--cor4);
 }
 
 footer {
     flex-shrink: 0;
     background-color: var(--cor0);
-    padding: 1% 4%;
+    padding: 2% 4%;
     text-align: center;
 }
 
@@ -161,10 +184,16 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
+    div.bloco-planta {
+        display: block;
+    }
     img {
         float: none !important;
         display: block;
-        margin: 0 auto;
+        margin: auto;
+    }
+    div.bloco-planta img {
+        margin: auto;
     }
     .w50 {
         padding: 20px;

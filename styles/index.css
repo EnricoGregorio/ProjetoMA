@@ -20,6 +20,12 @@ html, body {
     height: 100%;
 }
 
+body {
+    background-image: url(../img/fundo.png);
+    display: flex;
+    flex-direction: column;
+}
+
 img {
     width: 100%;
     max-width: 400px;
@@ -99,8 +105,8 @@ nav.desktop a:hover {
     display: none;
 }
 
-body {
-    background-image: url(../img/fundo.png);
+main {
+    flex: 1 0 auto;
 }
 
 section.descricao-projeto {
@@ -139,9 +145,8 @@ p {
 }
 
 footer {
+    flex-shrink: 0;
     background-color: var(--cor0);
-    width: 100%;
-    float: left;
     padding: 1% 4%;
     text-align: center;
 }

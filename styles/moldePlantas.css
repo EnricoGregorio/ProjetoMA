@@ -34,7 +34,7 @@ img {
 .center {
     max-width: 1280px;
     padding: 0 2%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .w33 {
@@ -110,11 +110,11 @@ main {
 }
 
 section.descricao-planta {
+    border-radius: 0 0 20px 20px;
     font-family: 'Open Sans';
     background-color: white;
     margin: auto;
     margin-bottom: 40px;
-    padding: 50px;
 }
 
 section.descricao-planta h1 {
@@ -124,6 +124,7 @@ section.descricao-planta h1 {
 }
 
 section.descricao-planta img {
+    border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.767);
 }
 
